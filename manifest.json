@@ -1,0 +1,30 @@
+{
+  "name": "Just some extension",
+  "version": "1.0.0",
+  "description": "This is an extension to look up just some extension",
+  "manifest_version": 3,
+  "author": "Jesus Christ",
+ 
+  "action": {
+      "default_title": "Just some extension",
+      "default_icon": {
+          "16": "/images/def.png",
+          "48": "/images/def.png",
+          "128": "/images/def.png"        
+      },      
+      "default_popup": "popup.html"
+  },
+ 
+  "permissions": [
+      "tabs",
+      "activeTab",
+      "storage"
+  ],
+
+  "background": {
+      "service_worker": "background.js"
+    },
+  "host_permissions": [
+      "<all_urls>"
+  ]
+}
